@@ -5,10 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
-import java.util.Locale;
-
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
-import static net.serenitybdd.rest.SerenityRest.useRelaxedHTTPSValidation;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PostCodeStepDefinitions {

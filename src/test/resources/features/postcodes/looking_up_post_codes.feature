@@ -37,14 +37,14 @@ Feature: Looking up post codes
       | baseUrl               | id |
       | https://reqres.in/api | 7  |
 
-  Scenario Outline: I delete the first user by id
+  Scenario Outline: I delete the first user
     Given I set the base url <baseUrl>
     When I perform a <operation> to the endpoint <endpoint>
     Examples:
       | baseUrl               | endpoint | operation |
       | https://reqres.in/api | /users   | DELETE    |
 
-  Scenario Outline: I perform a Post with a .json body
+  Scenario Outline: Create a user with a .json file
     Given I set the base url <baseUrl>
     When I perform a <operation> to the endpoint <endpoint> with the json <jsonPath>
     Examples:

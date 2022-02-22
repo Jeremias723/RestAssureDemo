@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        features = "classpath:features"
+        features = "classpath:features",
+        glue= {"PostCodeStepDefinitions.java"},
+        monochrome = true
 )
 public class CucumberTestSuite {}
